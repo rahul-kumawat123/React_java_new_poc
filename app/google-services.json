@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "664124560137",
+    "project_id": "onlinedoctorappointmentservice",
+    "storage_bucket": "onlinedoctorappointmentservice.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:664124560137:android:3aa9e921e18a367cd1b9d8",
+        "android_client_info": {
+          "package_name": "com.example.onlinedoctorappointmentservice"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "664124560137-5eimq36l247e71rveqvh7lhmfno5ggfb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9lgx-GA7BSNe8ODVSV1QORxC9kj88gfw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "664124560137-5eimq36l247e71rveqvh7lhmfno5ggfb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
