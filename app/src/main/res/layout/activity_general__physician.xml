@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".General_Physician"
+    android:background="@drawable/colors">
+
+    <androidx.appcompat.widget.SearchView
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="700sp"
+        app:iconifiedByDefault="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.315"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:queryHint="Search Doctors" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="400sp"
+        android:layout_height="200sp"
+        android:background="@drawable/colors"
+        app:cardBackgroundColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.131">
+
+        <ImageView
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:src="@drawable/doctor" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:text="Dr.Shekhar Sinha"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="30sp"
+            android:text="30+ Year Exp"
+            android:textColor="#FF0000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="60sp"
+            android:text="MBBS,MD"
+            android:textColor="@color/black" />
+
+        <Button
+            android:layout_width="400sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100sp"
+            android:text="Book Appointment"
+            app:backgroundTint="#E11212" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="270dp"
+            android:layout_marginTop="30sp"
+            android:text="Appointment Fee"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="270dp"
+            android:layout_marginTop="50sp"
+            android:text="Rs 700"
+            android:textColor="#FF0000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="250sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="160dp"
+            android:text="Sanjeevani Clicnic, Near HDFC Bank, Ratu Road, Ranchi, Jharkhand - 834001 "
+            android:textColor="@color/black" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="400sp"
+        android:layout_height="200sp"
+        android:background="@drawable/colors"
+        app:cardBackgroundColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.544">
+
+        <ImageView
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:src="@drawable/doctor" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:text="Dr.Rakesh Arya"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="30sp"
+            android:text="35+ Year Exp"
+            android:textColor="#FF0000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="60sp"
+            android:text="MBBS,MD"
+            android:textColor="@color/black" />
+
+        <Button
+            android:layout_width="400sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100sp"
+            android:text="Book Appointment"
+            app:backgroundTint="#E11212" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="270dp"
+            android:layout_marginTop="30sp"
+            android:text="Appointment Fee"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="270dp"
+            android:layout_marginTop="50sp"
+            android:text="Rs 500"
+            android:textColor="#FF0000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="250sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="160dp"
+            android:text="Jaganath Hospital and Research Centre 3 Radium Rd Kutchery Ranchi"
+            android:textColor="@color/black" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="400sp"
+        android:layout_height="200sp"
+        android:background="@drawable/colors"
+        app:cardBackgroundColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.969">
+
+        <ImageView
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:src="@drawable/doctor" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:text="Dr.D.P Singh"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="30sp"
+            android:text="24+ Year Exp"
+            android:textColor="#FF0000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="60sp"
+            android:text="MBBS,MD"
+            android:textColor="@color/black" />
+
+        <Button
+            android:layout_width="400sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100sp"
+            android:text="Book Appointment"
+            app:backgroundTint="#E11212" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="270dp"
+            android:layout_marginTop="30sp"
+            android:text="Appointment Fee"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="270dp"
+            android:layout_marginTop="50sp"
+            android:text="Rs 800"
+            android:textColor="#FF0000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="250sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="160dp"
+            android:text="Sanjeevani Clicnic, Near HDFC Bank, Ratu Road, Ranchi, Jharkhand - 834001 "
+            android:textColor="@color/black" />
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
