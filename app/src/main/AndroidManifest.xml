@@ -11,13 +11,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.OnlineDoctorAppointmentService">
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".DoctorLogin" />
+        <activity android:name=".Feedback_Activity" />
+        <activity android:name=".NueroSurgeon" />
+        <activity android:name=".Cardiologist" />
+        <activity android:name=".General_Physician" />
         <activity
             android:name=".DashBoard_Activity"
             android:label="@string/title_activity_dash_board_"
-            android:theme="@style/Theme.OnlineDoctorAppointmentService.NoActionBar"></activity>
+            android:theme="@style/Theme.OnlineDoctorAppointmentService.NoActionBar" />
         <activity android:name=".Dashboard_Activity" />
         <activity android:name=".RegisterActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -46,6 +47,18 @@ public class RegisterActivity extends AppCompatActivity {
                 String pass=password.getText().toString().trim();
                 String User_name=name.getText().toString().trim();
                 String User_phone=phone.getText().toString().trim();
+                /**
+                 *  Storing user data in shared preference
+                 */
+                SharedPreferences sharedPreferences=getSharedPreferences("User_Data",MODE_PRIVATE);
+                SharedPreferences.Editor myEdit=sharedPreferences.edit();
+                myEdit.putString("name",name.getText().toString());
+                myEdit.putString("email",email.getText().toString());
+
+                /**
+                * Validation of input
+                 */
+
                 if(TextUtils.isEmpty(User_name))
                 {
                     name.setError("Email is Required");
@@ -71,13 +84,15 @@ public class RegisterActivity extends AppCompatActivity {
                     password.setError("Password must be >= 6 Character");
                     return;
                 }
-                if(fAuth.getCurrentUser()!=null)
+                /*if(fAuth.getCurrentUser()!=null)
                 {
                     startActivity(new Intent(getApplicationContext(),Dashboard_Activity.class));
                     finish();
-                }
+                }*/
                 progressBar.setVisibility(View.VISIBLE);
-                // REGISTER THE USER IN FIREBASE
+                /**
+                 *  REGISTER THE USER IN FIREBASE
+                  */
 
                 fAuth.createUserWithEmailAndPassword(mail,pass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override

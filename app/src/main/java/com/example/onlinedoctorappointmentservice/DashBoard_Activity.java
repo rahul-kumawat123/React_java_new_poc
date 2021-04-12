@@ -1,12 +1,16 @@
 package com.example.onlinedoctorappointmentservice;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.Menu;
+import android.widget.Toast;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
+import com.google.firebase.auth.FirebaseAuth;
 
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
@@ -19,6 +23,7 @@ import androidx.appcompat.widget.Toolbar;
 public class DashBoard_Activity extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
+    FirebaseAuth firebaseAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,8 +35,10 @@ public class DashBoard_Activity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                /*Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();*/
+                // Feedback
+                startActivity(new Intent(getApplicationContext(),Feedback_Activity.class));
             }
         });
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
@@ -59,5 +66,12 @@ public class DashBoard_Activity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
+    }
+
+    public void onButtonClick(MenuItem item) {
+        firebaseAuth=FirebaseAuth.getInstance();
+        firebaseAuth.signOut();
+        Toast.makeText(this, "User LoggedOut", Toast.LENGTH_SHORT).show();
+        startActivity(new Intent(getApplicationContext(),MainActivity.class));
     }
 }
