@@ -12,4 +12,6 @@
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
     <string name="find_doctor_by_speciality">Find Doctor by Speciality</string>
+    <string name="move_to_screen_1">Move to Screen 1</string>
+    <string name="move_to_reactnative">Move to ReactNative</string>
 </resources>
